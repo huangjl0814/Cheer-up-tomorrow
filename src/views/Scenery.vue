@@ -1,17 +1,17 @@
 <template>
   <div class="scenery">
-    <div class="food-img">
+    <div class="scenery-img">
       <img src="/food/foodtop.jpg" alt="" />
     </div>
 
-    <div class="fd-1">
+    <div class="sc-1">
       <p>游在西安</p>
     </div>
     <!-- 单品美食介绍 -->
-    <ul class="fdu-1">
+    <ul class="scu-1">
       <router-link to="/sdetail">
-        <li class="fdi-1">
-          <div class="fdi-div-1">
+        <li class="sci-1">
+          <div class="sci-div-1">
             <img src="/jingqu/jq-1.jpg" alt="" />
           </div>
           <b>旅游景区||西安碑林博物馆</b>
@@ -20,8 +20,8 @@
           </p>
         </li>
       </router-link>
-        <li class="fdi-1">
-          <div class="fdi-div-1">
+        <li class="sci-1">
+          <div class="sci-div-1">
             <img src="/food/food-1.jpg" alt="" />
           </div>
           <b> 西安美食||水盆羊肉 </b>
@@ -30,8 +30,8 @@
             大叔大婶多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多少时诵诗书所时所所所所
           </p>
         </li>
-        <li class="fdi-1">
-          <div class="fdi-div-1">
+        <li class="sci-1">
+          <div class="sci-div-1">
             <img src="/food/food-1.jpg" alt="" />
           </div>
           <b> 西安美食||水盆羊肉 </b>
@@ -40,8 +40,8 @@
             大叔大婶多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多少时诵诗书所时所所所所
           </p>
         </li>
-        <li class="fdi-1">
-          <div class="fdi-div-1">
+        <li class="sci-1">
+          <div class="sci-div-1">
             <img src="/food/food-1.jpg" alt="" />
           </div>
           <b> 西安美食||水盆羊肉 </b>
@@ -58,21 +58,22 @@
 export default {};
 </script>
 <style>
-.food-img img {
+.scenery-img img {
     width: 100%;
     height: 400px;
+    margin-bottom: 50px;
 }
-.fd-1 {
+.sc-1 {
   width: 10%;
   margin-left: 44%;
   font-size: 30px;
   font-weight: 700;
 }
-.fdu-1 {
+.scu-1 {
   width: 70%;
   margin-left: 15%;
 }
-.fdi-1 {
+.sci-1 {
   width: 38%;
   height: 400px;
   margin-left: 6%;
@@ -81,14 +82,14 @@ export default {};
   margin-top: 20px;
   color: black;
 }
-.fdi-1:hover {
+.sci-1:hover {
   color: #500024;
 }
-.fdi-1 b {
+.sci-1 b {
   display: inline-block;
   margin-top: 10px;
 }
-.fdi-1 p {
+.sci-1 p {
   margin-top: 10px;
   /* 让文字超出部分变省略号 */
   overflow: hidden;
@@ -100,17 +101,17 @@ export default {};
 
   font-size: 14px;
 }
-.fdi-div-1 {
+.sci-div-1 {
   width: 100%;
   height: 300px;
   overflow: hidden;
 }
-.fdi-1 img {
+.sci-1 img {
   width: 100%;
   height: 300px;
   transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
-.fdi-1 img:hover {
+.sci-1 img:hover {
   transform: scale3d(1.2, 1.2, 1);
 }
 </style>
