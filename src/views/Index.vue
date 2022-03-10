@@ -64,7 +64,7 @@
         </div>
         <!-- recreation -->
         <div class="col-sm-6 col-lg-3 p-2 fade-in">
-          <router-link to="/recreations" class="d-block f2">
+          <router-link to="/scenery" class="d-block f2">
             <i class="mask"></i>
             <span class="words">
               <img src="index/index-words-yu.png" class="w-100" />

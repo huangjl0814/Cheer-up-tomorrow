@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Index from '../views/Index.vue'
 import Hotel from '../views/Hotels.vue'
 import Foods from '../views/Foods.vue'
-import Recreations from '../views/Recreations.vue'
 import Shopping from '../views/Shopping.vue'
 import Dfoods from '../views/Dfoods.vue'
 import Loginn from '../views/Login.vue'
@@ -61,10 +60,6 @@ const routes = [
   {
     path: "/shopping",
     component: Shopping
-  },
-  {
-    path: '/recreations',
-    component: Recreations
   },
   {
     path: '/foods',
