@@ -30,7 +30,7 @@
           <router-link to="/scenery" class="textc" href="#">游在西安</router-link>
         </li>
         <li class="mr-3 p-3">
-          <router-link to="/" class="textc" href="#">购在西安</router-link>
+          <router-link to="/shopping" class="textc" href="#">购在西安</router-link>
         </li>
         <li class="mr-3 p-3">
           <router-link to="/qhea" class="textc" href="#">聊聊西安</router-link>

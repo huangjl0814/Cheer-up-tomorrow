@@ -1,229 +1,116 @@
 <template>
   <div class="shop">
-    <div>
-      <img src="shop/04-wanzhuan_02.jpg" class="w-100" />
+    <div class="shop-img">
+      <img src="shop/04-wanzhuan_02.jpg"  />
     </div>
-    <!-- crumb start-->
-    <!-- <div class="crumb p-3 crumb_bg my_font_14">
-      <div class="container">
-        <span class="pl-1 pr-3">您当前的位置：</span>
-        <router-link to="/" class="px-2">网站首页</router-link>&gt;
-        <router-link to="/" class="px-2">玩转西安</router-link>&gt;
-        <router-link to="/" class="select_color">购在西安</router-link>
-      </div>
-    </div> -->
-    <!--crumb end -->
-    <!-- 分类 start -->
-    <div class="container mt-3">
-      <div class="px-4 shop_select mb-4 my_font_14">
-        <div class="filter-list border-bottom py-2">
-          <ul class="d-flex justify-content-around my_width1">
-            <li class="my_cursor1">旅游商品类型：</li>
-            <li class="my_cursor2 filter-item select_bg">全部</li>
-            <li class="my_cursor2 filter-item">食品类</li>
-            <li class="my_cursor2 filter-item">日用品</li>
-            <li class="my_cursor2 filter-item">纪念用品</li>
-            <li class="my_cursor2 filter-item">艺术类</li>
-            <li class="my_cursor2 filter-item">工业类</li>
-            <li class="my_cursor2 filter-item">药材类</li>
-          </ul>
-        </div>
-      </div>
-      <!-- 分类 end -->
-      <!-- 住宿列表 start -->
-      <div class="d-flex justify-content-around shop_content flex-wrap">
-        <div class="my_padding" v-for="(shop, key) of shops" :key="key">
-          <div class="shop_list p-2">
-            <div class="shop_img">
-              <img :src="`shop/${shop.shop_img}`" class="w-100 h-100" />
-            </div>
-            <div class="shop_bt">
-              <p class="pb-3 border-bottom pt-3 d-flex">
-                <router-link
-                  class="shop_content d-block w-75 font-weight-bold title-hove"
-                  to="/"
-                  >{{ shop.shop_title }}</router-link
-                >
-              </p>
-              <div class="my_font_14 pt-1">
-                <p class="py-2 mb-0 my_wrap">
-                  {{ shop.shop_content }}
-                </p>
-              </div>
-            </div>
+    <div class="fd-1">
+      <p>购在西安</p>
+    </div>
+    <ul class="spu-1">
+      <router-link to="/fdetail">
+        <li class="spi-1">
+          <div class="spi-div-1">
+            <img src="/shop/sp-1.png" alt="" />
           </div>
-        </div>
-      </div>
-      <!-- 分页 start-->
-      <nav aria-label="page navigation mt-3">
-        <ul class="pagination d-flex justify-content-center">
-          <li class="page-item disabled">
-            <router-link class="page-link" to="#">上一页</router-link>
-          </li>
-          <li class="page-item active">
-            <router-link class="page-link" to="#">1</router-link>
-          </li>
-          <li class="page-item">
-            <router-link class="page-link" to="#">2</router-link>
-          </li>
-          <li class="page-item">
-            <router-link class="page-link" to="#">3</router-link>
-          </li>
-          <li class="page-item">
-            <router-link class="page-link" to="#">4</router-link>
-          </li>
-          <li class="page-item">
-            <router-link class="page-link" to="#">5</router-link>
-          </li>
-          <li class="page-item">
-            <router-link class="page-link" to="#">6</router-link>
-          </li>
-          <li class="page-item">
-            <router-link class="page-link" to="#">下一页</router-link>
-          </li>
-        </ul>
-      </nav>
-      <!-- 分页 start -->
-    </div>
+          <b> 复刻葡萄花鸟纹香囊 </b>
+          <p>
+            在《国家宝藏》中大放异彩的葡萄花鸟纹香囊，出土于何家村窖藏，凭借唐朝精湛的工艺吸粉无数，无论当作配饰还是香包，在如今都仍有用处。因为是文物的复刻版，这一文创品的价格相对其他产品较高，非常值得买来收藏或是当作赠礼。
+          </p>
+        </li>
+      </router-link>
+        <li class="spi-1">
+          <div class="spi-div-1">
+            <img src="/shop/sp-2.png" alt="" />
+          </div>
+          <b> 城墙剪影烛台 </b>
+          <p>
+            城墙上，凭借出色文创屡获殊荣的“城墙故事”纪念品店非常值得一逛，而他的招牌文创产品当属城墙剪影烛台了。烛台需自行拼接，组合好后即是一座迷你城墙，蜡烛点燃放进烛台后，镂空的结构可在室内映出城墙剪影，效果惊艳，动手能力强的小伙伴不要错过。
+          </p>
+        </li>
+        <li class="spi-1">
+          <div class="spi-div-1">
+            <img src="/shop/sp-3.png" alt="" />
+          </div>
+          <b> 皮影 </b>
+          <p>
+           去西安旅游，看完一场皮影戏后，不妨买个皮影工艺品回家留作纪念。皮影工艺品在回民街、书院门、永兴坊等地都有出售，既有带操作杆的皮影，也有镜框装裱好的皮影，无论是摆在家里做装饰还是送给亲朋，都是很不错的
+          </p>
+        </li>
+        <li class="spi-1">
+          <div class="spi-div-1">
+            <img src="/shop/sp-4.png" alt="" />
+          </div>
+          <b> 仿秦兵马俑 </b>
+          <p>
+            西安旅游，真的兵马俑带不走，不妨带两个仿秦兵马俑以留作纪念。缩小复刻版的仿秦兵马俑也是千姿百态，惟妙惟肖。随着秦兵马俑的发掘与展出，秦兵马俑复制品日渐成为中外游客理想的纪念品和礼品，使秦俑走出陕西，遍迹世界。
+          </p>
+        </li>
+    </ul>
+  
+         
   </div>
 </template>
 <style scoped>
-/* page start  */
-.shop .page-item.disabled .page-link {
-  color: #999;
-  background-color: #fff;
+.shop-img {
+  width: 100%;
+  margin-bottom: 50px;
 }
-.shop .page-item.active .page-link {
-  color: #fff;
-  background-color: rgb(178, 31, 31);
-  border: 1px solid rgb(178, 31, 32);
+.shop-img img {
+  width: 100%;
+  height: 400px;
 }
-.shop .page-item .page-link {
-  color: #666;
-  background-color: #fff;
-  border-radius: 0.25rem;
-  border: 1px solid #e9e9e9;
+.fd-1 {
+  width: 10%;
+  margin-left: 44%;
+  font-size: 30px;
+  font-weight: 700;
 }
-.shop .page-item + .page-item {
-  margin: 0 5px;
+.spu-1 {
+  width: 70%;
+  margin-left: 15%;
 }
-.shop .page-link:hover {
-  color: #fff;
-  border-color: rgb(178, 31, 32);
-  background-color: rgb(178, 31, 31);
+.spi-1 {
+  width: 38%;
+  height: 450px;
+  margin-left: 6%;
+  float: left;
+  background: #e1efff;
+  margin-top: 20px;
+  color: black;
 }
-/* page end */
-/* crumb start */
-.shop .crumb_bg {
-  background: #fff;
+.spi-1:hover {
+  color: #500024;
 }
-.shop .select_color {
-  color: rgb(178, 31, 31);
+.spi-1 b {
+  display: inline-block;
+  margin-top: 10px;
 }
-/* crumb end */
-/* hotel-select start */
-.shop .shop_select {
-  background: #fff;
-}
-.shop .filter-list ul {
-  margin-left: -20px;
-}
-.shop .filter-list ul li:not(:nth-child(1)):hover {
-  background: rgb(178, 31, 31);
-  color: #fff;
-}
-.shop .filter-list .my_width1 {
-  width: 85%;
-}
-.shop .my_cursor1 {
-  cursor: default;
-  padding: 5px;
-}
-
-.shop .my_cursor2 {
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 2px;
-  transition-duration: 0.3s;
-}
-.shop .select_bg {
-  background: rgb(178, 31, 31);
-  color: #fff;
-}
-/* hotel-select end */
-/* hotel-list start */
-.shop .my_padding {
-  margin-bottom: 15px;
-}
-
-.shop .my_padding:nth-child(2) {
-  padding: 0 15px;
-}
-
-.shop .my_padding:nth-child(5) {
-  padding: 0 15px;
-}
-
-.shop .my_padding:nth-child(8) {
-  padding: 0 15px;
-}
-.shop .shop_list {
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.shop .shop_list:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px -15px #666;
-}
-.shop .shop_list:hover .title-cover {
-  color: rgb(178, 31, 31);
-}
-.shop .my_wrap {
-  white-space: nowrap;
+.spi-1 p {
+  margin-top: 10px;
+  /* 让文字超出部分变省略号 */
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.shop .my_wrap1 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.shop .my_bg {
-  background: rgb(178, 31, 31);
-  color: #fff;
-  font-size: 12px;
-}
+  display: -webkit-box;
+  /* 4行后超出部分变省略号 */
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 
-.shop .my_font_14 {
   font-size: 14px;
 }
-
-.shop .shop_img {
+.spi-div-1 {
+  width: 100%;
+  height: 300px;
   overflow: hidden;
-  height: 272px;
+}
+.spi-1 img {
+  width: 100%;
+  height: 300px;
+  transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.spi-1 img:hover {
+  transform: scale3d(1.2, 1.2, 1);
 }
 
-.shop .shop_img img {
-  transition: all 0.5s ease-in;
-}
-
-.shop .shop_img:hover img {
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 960px) {
-  .shop_content .my_padding {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .shop_content .my_padding {
-    width: 33.3333333%;
-  }
-}
-/* hotel-list end */
 </style>
 <script>
 export default {
