@@ -17,7 +17,7 @@
       <ul class="col-9 menu d-flex mt-4 justify-content-end align-items-center">
         <li class="mr-3 p-3"><a class="text-danger" href="/">首页</a></li>
         <li class="mr-3 p-3">
-          <router-link to="/" class="textc" href="#">旅游攻略</router-link>
+          <router-link to="/trips" class="textc" href="#">旅游攻略</router-link>
         </li>
 
         <li class="mr-3 p-3">

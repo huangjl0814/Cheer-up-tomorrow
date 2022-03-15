@@ -14,9 +14,19 @@ import Hdetail from '../views/Hdetail'
 import Qhea from '../views/Qhea.vue'
 import Scenery from '../views/Scenery'
 import Sdetail from '../views/Sdetail'
+import Trips from '../views/Trip'
+import Orders from '../views/Orders'
 Vue.use(VueRouter)
 
 const routes = [
+  { 
+    path: '/orders',
+    component: Orders
+  },
+  { 
+    path: '/trips',
+    component: Trips
+  },
   { 
     path: '/sdetail',
     component: Sdetail
