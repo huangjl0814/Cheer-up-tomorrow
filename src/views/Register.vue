@@ -13,6 +13,9 @@
             <input type="text" placeholder="输入账号" v-model="usename" />
           </li>
           <li class="reg-li-1">
+            <input type="text" placeholder="输入手机号" v-model="telephone" />
+          </li>
+          <li class="reg-li-1">
             <input type="password" placeholder="输入密码" v-model="password1" />
           </li>
           <li class="reg-li-1">
@@ -37,6 +40,7 @@
 export default {
   data() {
     return {
+      telephone:"",
       usename: "",
       password1: "",
       password2: "",
@@ -104,7 +108,7 @@ export default {
 .reg-li-1 {
   width: 100%;
   height: 60px;
-  margin: 20px 0 0 20px;
+  margin: 8px 0 0 20px;
 }
 .reg-u-1:nth-child(1) {
   font-size: 22px;

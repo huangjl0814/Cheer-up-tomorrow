@@ -1,17 +1,32 @@
 <template>
   <div class="orders">
-      <!-- 弹框 -->
+    <!-- 弹框 -->
     <div class="order-son" v-if="showModal">
-        <div class="son-1">
-            <input type="text" placeholder="请输入手机号">
+      <div class="son-1">
+        <p>{{ this.value1 }}</p>
+        <input type="text" placeholder="请输入手机号" v-model="phoneNum" />
+      </div>
+      <button @click="wancheng">完成</button>
+      <br />
+      <el-popover placement="top" width="160" v-model="visible">
+        <p>您确定要预约{{ this.value1 }}当天的行程吗</p>
+        <div style="text-align: right; margin: 0">
+          <el-button size="mini" type="text" @click="kaolv"
+            >再考虑一下</el-button
+          >
+          <el-button type="primary" size="mini" @click="wancheng"
+            >是的，我确认</el-button
+          >
         </div>
-        <button @click="showModal=false" >完成</button>
+
+        <el-button slot="reference">提交</el-button>
+      </el-popover>
     </div>
     <div class="or-img">
       <img src="/trip/trip-top.jpg" alt="" />
     </div>
     <ul class="or-ul-1">
-      <li class="or-li-1">
+      <li class="or-li-1 yr-1">
         <div>
           <img src="/trip/trip-1.jpg" alt="" />
         </div>
@@ -24,15 +39,17 @@
             </li>
             <li>
               <p>请选择游玩时间</p>
+              <!-- 时间选择器存在问题：在确认界面点击隐藏后 日期选择器的默认时间会跳到1970年  -->
               <el-date-picker
                 v-model="value1"
+                value-format="yyyy-MM-dd"
                 type="date"
                 placeholder="选择日期"
                 :picker-options="pickerOptions"
               >
               </el-date-picker>
               <br />
-              <button class="ormit-1" @click="showModal=true">立即预定</button>
+              <button class="ormit-1" @click="show">立即预定</button>
             </li>
           </ul>
         </div>
@@ -53,32 +70,58 @@ export default {
   data() {
     return {
       showModal: false,
+      visible: false,
       pickerOptions: {
         disabledDate(time) {
           return time.getTime() < Date.now();
         },
       },
       value1: "",
+      phoneNum: "",
     };
+  },
+  methods: {
+    show() {
+      console.log(this.value1);
+      if (this.value1 == 0) {
+        alert("请选择预约日期");
+      } else {
+        this.showModal = true;
+      }
+    },
+    wancheng() {
+      console.log(this.phoneNum)
+      if (this.phoneNum.length == 0) {
+        alert("请先输入电话号码");
+      } else {
+        this.value1 = 0;
+        this.showModal = false;
+        this.phoneNum = ''
+      }
+    },
+    kaolv() {
+      this.value1 = 0;
+      this.showModal = false;
+    },
   },
 };
 </script>
 <style>
 .orders {
   position: relative;
+  background-color: aliceblue;
 }
 .order-son {
   position: absolute;
-  top: 20%;
-  left: 14%;
-  width: 65%;
-  height: 350px;
+  top: 21.6%;
+  left: 15%;
+  width: 70%;
+  height: 411px;
   z-index: 2;
   background: white;
 }
 .or-img {
   width: 100%;
-  margin-bottom: 50px;
 }
 .or-img img {
   width: 100%;
@@ -86,7 +129,14 @@ export default {
 }
 .or-ul-1 {
   width: 70%;
+  padding-top: 50px;
   margin-left: 15%;
+  background-color: white;
+}
+.yr-1 {
+  padding: 55px 0 0 50px;
+  border: 3px solid orange;
+  margin-bottom: 20px;
 }
 .or-li-1 {
   display: flex;
@@ -104,7 +154,7 @@ export default {
   height: 211px;
 }
 .ormit-1 {
-  margin-left: 130px;
+  /* margin-left: 130px; */
   margin-top: 90px;
   border: none;
   width: 100px;
