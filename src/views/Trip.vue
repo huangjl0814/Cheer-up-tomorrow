@@ -37,35 +37,39 @@
           </ul>
         </div>
       </div>
-    </div>
-    <ul class="tp-ul-1">
-      <li class="tp-li-1">
-        <div class="tpv-1">
-          <img src="/trip/trip-1.jpg" alt="" />
-        </div>
-        <div class="tpv-2">
-          <p>
-            西安一日游，避免排队拥挤，本地人带游，带您体验传统的西安文化，品尝绝美的西安美食。
-          </p>
-          <p>一天0晚</p>
-        </div>
-        <div class="tpv-3">
-          <p>￥358.00</p>
-          <router-link to="/orders">
-            <input type="submit" value="查看详情" class="ckxq" />
-          </router-link>
-        </div>
-      </li>
-    </ul>
+      <h4>当地导游预约服务：</h4>
+      <ul class="tp-ul-1">
+        <li class="tp-li-1">
+          <div class="tpv-1">
+            <img src="/trip/trip-1.jpg" alt="" />
+          </div>
+          <div class="tpv-2">
+            <p>
+              西安一日游，避免排队拥挤，本地人带游，带您体验传统的西安文化，品尝绝美的西安美食。
+            </p>
+            <p>一天0晚</p>
+          </div>
+          <div class="tpv-3">
+            <p>￥358.00</p>
+            <router-link to="/orders">
+              <input type="submit" value="查看详情" class="ckxq" />
+            </router-link>
+          </div>
+        </li>
+      </ul>
+    </div>  
   </div>
 </template>
 <script>
 export default {};
 </script>
 <style>
+.trips {
+  background-color: aliceblue;
+}
 .trip-img {
   width: 100%;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .trip-img img {
   width: 100%;
@@ -74,6 +78,8 @@ export default {};
 .trip-center {
   width: 70%;
   margin-left: 15%;
+  background-color: white;
+  padding-top: 50px;
 }
 .tc-11 {
   width: 80%;
@@ -102,8 +108,8 @@ export default {};
   color: orange;
 }
 .tp-ul-1 {
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
 }
 .tp-li-1 {
   display: flex;

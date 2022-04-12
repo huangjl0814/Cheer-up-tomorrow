@@ -50,16 +50,25 @@ export default {
   methods: {
     open() {
       console.log(this.usename.length);
-      if(this.usename.length==0 || this.usename.length>10){
-          this.$confirm("用戶名长度不符合要求，请重新输入长度为0-10的用户名", "提示", {
+      if(this.usename.length < 4 || this.usename.length>10){
+          this.$confirm("用戶名长度不符合要求，请重新输入长度为4-10的用户名", "提示", {
         confirmButtonText: "确定",
         type: "warning",
       });
-      }else if(this.password1.length==0 || this.password1.length>20){
-          this.$confirm("密码长度不符合要求，请重新输入长度为0-20的密码", "提示", {
+      this.usename = ''
+      }else if (this.telephone.length != 11) {
+         this.$confirm("电话号码长度不符合要求，请重新输入正确的电话号码", "提示", {
         confirmButtonText: "确定",
         type: "warning",
       });
+      this.telephone = ''
+      }else if(this.password1.length < 5 || this.password1.length>20){
+          this.$confirm("密码长度不符合要求，请重新输入长度为5-20的密码", "提示", {
+        confirmButtonText: "确定",
+        type: "warning",
+      });
+      this.password1 = ''
+      this.password2 = ''
       }else if(this.password1===this.password2){
           this.$router.push({path:'/loginn'})
             this.$confirm("注册成功，以为您跳转至登录页面", "提示", {
@@ -71,6 +80,7 @@ export default {
         confirmButtonText: "确定",
         type: "warning",
         });
+        this.password2 = ''
       }
     },
     registerSub() {

@@ -3,10 +3,12 @@
     <!-- 弹框 -->
     <div class="order-son" v-if="showModal">
       <div class="son-1">
-        <p>{{ this.value1 }}</p>
-        <input type="text" placeholder="请输入手机号" v-model="phoneNum" />
-      </div>
-      <button @click="wancheng">完成</button>
+        <!-- <p>{{ this.value1 }}</p> -->
+          <h4 class="son-1-1">预约服务</h4>
+        <h5 class="son-1-3">请输入联系电话：</h5>
+        <input class="son-1-2" type="text" placeholder="请输入手机号" v-model="phoneNum" />
+      
+      <!-- <button @click="wancheng">完成</button> -->
       <br />
       <el-popover placement="top" width="160" v-model="visible">
         <p>您确定要预约{{ this.value1 }}当天的行程吗</p>
@@ -19,8 +21,9 @@
           >
         </div>
 
-        <el-button slot="reference">提交</el-button>
+        <el-button slot="reference" class="son-refer">提交</el-button>
       </el-popover>
+      </div>
     </div>
     <div class="or-img">
       <img src="/trip/trip-top.jpg" alt="" />
@@ -34,12 +37,8 @@
           <h4>精品西安一日游</h4>
           <p>避免排队拥挤,带您体验传统的西安文化，品尝绝美的西安美食。</p>
           <ul class="or-ul-2">
-            <li class="or-li-2">
-              <img src="/order/order-2.jpg" alt="" class="ormg-1" />
-            </li>
             <li>
               <p>请选择游玩时间</p>
-              <!-- 时间选择器存在问题：在确认界面点击隐藏后 日期选择器的默认时间会跳到1970年  -->
               <el-date-picker
                 v-model="value1"
                 value-format="yyyy-MM-dd"
@@ -94,13 +93,14 @@ export default {
       if (this.phoneNum.length == 0) {
         alert("请先输入电话号码");
       } else {
-        this.value1 = 0;
+        this.value1 = '';
         this.showModal = false;
         this.phoneNum = ''
+        alert("您已经成功预约"+this.value1+"的行程，祝您旅途愉快")
       }
     },
     kaolv() {
-      this.value1 = 0;
+      this.value1 = '';
       this.showModal = false;
     },
   },
@@ -164,5 +164,27 @@ export default {
 }
 .or-li-2 {
   padding: 0 5px;
+}
+.son-1 {
+  width: 60%;
+  height: 100%;
+  margin-left: 20%;
+  border: 3px solid orange;
+}
+.son-1-1 {
+  text-align: center;
+  color: orange;
+  padding: 30px 0;
+}
+.son-1-2 {
+  margin-left: 34%;
+  margin-bottom: 100px;
+}
+.son-refer {
+  margin-left: 45%;
+}
+.son-1-3 {
+  margin-left: 15%;
+  padding-bottom: 20px;
 }
 </style>

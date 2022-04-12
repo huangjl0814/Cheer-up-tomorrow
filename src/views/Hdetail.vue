@@ -25,11 +25,12 @@
             <img :src="item" alt="" />
           </li>
         </ul>
-        <p>
-          基本信息 入住时间: 12:00 离店时间: 14:00之前 建成于: 2006年 翻修于:
-          2019年 酒店规模: 206间客房 主要设施 免费wifi 免费停车场 电梯 餐厅
-          行李寄存 24小时服务 热水壶 吹风机
-        </p>
+        <p class="hd-p1">建成于: 2006年  </p>
+        <p class="hd-p1">翻修于: 2019年</p>
+        <p class="hd-p1">酒店规模: 206间客房</p>
+        <p class="hd-p1">入住时间: 12:00 离店时间: 14:00之前</p>
+        <p class="hd-p1">主要设施： 免费wifi 免费停车场 电梯 餐厅 行李寄存 24小时服务 热水壶 吹风机 一次用用具等</p>
+        <p class="hd-p1">价格：标间：265元~425元 大床房：375元~525元</p>
       </li>
       <li class="htl-li1"></li>
       <li class="htl-li1"></li>
@@ -74,6 +75,7 @@ export default {
 .htl-li1 img {
   width: 76%;
   margin-left: 12%;
+  margin-bottom: 20px;
 }
 .htl-li2 {
   text-align: center;
@@ -84,5 +86,8 @@ export default {
   background: #e1efff;
   padding: 20px;
   margin-bottom: 20px;
+}
+.hd-p1 {
+  margin-top: 10px;
 }
 </style>
