@@ -9,16 +9,36 @@ import Loginn from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Gcxian from '../views/Gcxian.vue'
 import Scroad from '../views/Scroad.vue'
+import Lsscroad from '../views/Lsscroad.vue'
+import Syscroad from '../views/Syscroad.vue'
+import Xzscroad from '../views/Xzscroad.vue'
 import Fdetail from '../views/Fdetail'
+import Fdetailpaomo from '../views/Fdetailpaomo'
+import Fdetaillp from '../views/Fdetaillp'
+import Fdetailrjm from '../views/Fdetailrjm'
+import Fdetailhltpm from '../views/Fdetailhltpm'
+import Fdetailzg from '../views/Fdetailzg'
+import Fdetailszb from '../views/Fdetailszb'
+import Fdetailsjb from '../views/Fdetailsjb'
 import Hdetail from '../views/Hdetail'
 import Qhea from '../views/Qhea.vue'
 import Scenery from '../views/Scenery'
 import Sdetail from '../views/Sdetail'
 import Trips from '../views/Trip'
 import Orders from '../views/Orders'
+import Storyyi from '../views/Storyyi'
+import Storyer from '../views/Storyer'
 Vue.use(VueRouter)
 
 const routes = [
+  { 
+    path: '/storyyi',
+    component: Storyyi
+  },
+  { 
+    path: '/storyer',
+    component: Storyer
+  },
   { 
     path: '/orders',
     component: Orders
@@ -48,8 +68,48 @@ const routes = [
     component: Fdetail
   },
   { 
+    path: '/fdetailpaomo',
+    component: Fdetailpaomo
+  },
+  { 
+    path: '/fdetaillp',
+    component: Fdetaillp
+  },
+  { 
+    path: '/fdetailrjm',
+    component: Fdetailrjm
+  },
+  { 
+    path: '/fdetailhltpm',
+    component: Fdetailhltpm
+  },
+  { 
+    path: '/fdetailzg',
+    component: Fdetailzg
+  },
+  { 
+    path: '/fdetailszb',
+    component: Fdetailszb
+  },
+  { 
+    path: '/fdetailsjb',
+    component: Fdetailsjb
+  },
+  { 
     path: '/road',
     component: Scroad
+  },
+  { 
+    path: '/lsroad',
+    component: Lsscroad
+  },
+  { 
+    path: '/syroad',
+    component: Syscroad
+  },
+  { 
+    path: '/xzroad',
+    component: Xzscroad
   },
   { 
     path: '/gcxian',

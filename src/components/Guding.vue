@@ -16,6 +16,7 @@
       <img src="images/icons/db.png" alt="" />
     </div>
   </div>
+
 </template>
 <style >
 .silde {

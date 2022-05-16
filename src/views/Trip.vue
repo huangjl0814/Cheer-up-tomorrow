@@ -51,9 +51,9 @@
           </div>
           <div class="tpv-3">
             <p>￥358.00</p>
-            <router-link to="/orders">
-              <input type="submit" value="查看详情" class="ckxq" />
-            </router-link>
+            
+            <input type="submit" @click="goorder" value="查看详情" class="ckxq" />
+            
           </div>
         </li>
       </ul>
@@ -61,7 +61,19 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  methods:{
+    goorder(){
+       var nologin = document.querySelector('.login-1')
+      if(nologin.style.display == 'none'){
+        this.$router.push({path:'/orders'})
+      }else{
+        alert("请先登录再进行操作")
+        this.$router.push({path:'/loginn'})
+      }
+    }
+  }
+};
 </script>
 <style>
 .trips {

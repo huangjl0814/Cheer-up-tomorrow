@@ -26,6 +26,7 @@
   </div>
 </template>
 <script>
+
 export default {
   data() {
     return {
@@ -35,12 +36,16 @@ export default {
   },
   methods: {
     loginBtn() {
+      var nologin = document.querySelector('.login-1')
+      var islogin = document.querySelector('.login-2')
       if (this.usename.length == 0) {
         this.$confirm("请输入用户名", "提示", {
           confirmButtonText: "确定",
           type: "warning",
         });
       } else {
+        nologin.style.display = 'none'
+        islogin.style.display = 'block'
         this.$router.push({ path: "/" });
         this.$confirm("登录成功，以为您跳转至首页", "提示", {
           confirmButtonText: "确定",
@@ -49,6 +54,7 @@ export default {
       }
     },
     toRegister() {
+
       this.$router.push({ path: "/register" });
     },
   },

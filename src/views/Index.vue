@@ -26,9 +26,9 @@
           <p class="mb-5">一条具有历史意义的国际通道，促进了东西方文明的交流</p>
           <ul class="d-flex justify-content-around ul_style">
             <li class="m-3"><router-link to="/road">海上丝绸之路</router-link></li>
-            <li class="m-3"><router-link to="/">陆上丝绸之路</router-link></li>
-            <li class="m-3"><router-link to="/">申遗丝绸之路</router-link></li>
-            <li class="m-3"><router-link to="/">玄奘丝绸之路</router-link></li>
+            <li class="m-3"><router-link to="/lsroad">陆上丝绸之路</router-link></li>
+            <li class="m-3"><router-link to="/syroad">申遗丝绸之路</router-link></li>
+            <li class="m-3"><router-link to="/xzroad">玄奘丝绸之路</router-link></li>
           </ul>
         </div>
         <div class="col-sm-12 col-lg-6 img fade-in">
@@ -89,7 +89,7 @@
         <ul class="row no-gutters f3">
           <li class="col-sm-12 col-lg-6 h-100">
             <div>
-              <router-link to="/" class="d-flex fade-in">
+              <router-link to="/storyyi" class="d-flex fade-in">
                 <img src="index/index-pic-7.jpg" alt="" class="w-50" />
                 <div class="f3_content w-50 text-center pt-5">
                   <h3 class="title h4 mb-4">高山仰止 感恩秦岭</h3>
@@ -98,7 +98,7 @@
                   </p>
                 </div>
               </router-link>
-              <router-link to="/" class="d-flex fade-in">
+              <router-link to="/storyer" class="d-flex fade-in">
                 <div class="f3_content w-50 text-center pt-5">
                   <h3 class="title mb-4">古城底蕴 名家辈出</h3>
                   <p>
@@ -112,12 +112,12 @@
           <li class="col-sm-12 col-lg-6 h-100 f_rela fade-in">
             <router-link to="/">
               <img src="index/index-pic-9.jpg" class="w-100" />
-              <div class="f_absolute">
+              <!-- <div class="f_absolute">
                 <h3 class="title">锦绣三秦 长安八景</h3>
                 <p>
                   “长安八景”是三秦大地著名的文物胜地。在西安碑林，有一块碑石，用诗和画的形式描绘了这八景的奇丽秀美。
                 </p>
-              </div>
+              </div> -->
             </router-link>
           </li>
         </ul>

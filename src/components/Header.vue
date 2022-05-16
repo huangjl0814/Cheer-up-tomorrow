@@ -13,6 +13,15 @@
             <router-link to="/register"><span>注册</span></router-link>
           </li>
         </ul>
+        <ul class="login-2">
+          <li class="hyn">
+            <span>您好！欢迎您</span>
+          </li>
+          <li>
+            <span @click="tclogin" class="tcdl">退出登录</span>
+          </li>
+        </ul>
+
       </div>
       <ul class="col-9 menu d-flex mt-4 justify-content-end align-items-center">
         <li class="mr-3 p-3"><a class="text-danger" href="/">首页</a></li>
@@ -45,6 +54,29 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      
+    };
+  },
+  methods: {
+    tclogin() {
+      var nologin = document.querySelector('.login-1')
+      var islogin = document.querySelector('.login-2')
+      
+      nologin.style.display = 'block'
+      islogin.style.display = 'none'
+
+      // this.$router.push({path:'/'})
+      
+    }
+  },
+};
+
+</script>
+
    
  <style>
 html {
@@ -71,6 +103,8 @@ a {
 }
 /* .breadcrumb-item+.breadcrumb-item::before{content:"";} */
 
+/* 退出登录样式 */
+
 .textc:hover {
   color: red;
 }
@@ -82,7 +116,25 @@ a {
   position: absolute;
   top: 2%;
   left: 300px;
-  width: 50px;
+  width: 100px;
+  display: block;
+}
+.login-2 {
+  position: absolute;
+  top: 2%;
+  left: 300px;
+  width: 80px;
+  display: none;
+  cursor:pointer;
+}
+.hyn {
+  font-size: 12px;
+}
+.tcdl {
+  color: blue;
+}
+.tcdl:hover {
+  border: blue;
 }
 /* 所有二级菜单项鼠标悬停时，都变为红字 */
 
