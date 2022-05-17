@@ -7,7 +7,7 @@
       <p>购在西安</p>
     </div>
     <ul class="spu-1">
-      <router-link to="/fdetail">
+      <router-link to="/goodsyi">
         <li class="spi-1">
           <div class="spi-div-1">
             <img src="/shop/sp-1.png" alt="" />
@@ -18,6 +18,7 @@
           </p>
         </li>
       </router-link>
+      <router-link to="/goodser">
         <li class="spi-1">
           <div class="spi-div-1">
             <img src="/shop/sp-2.png" alt="" />
@@ -27,6 +28,8 @@
             城墙上，“城墙故事”纪念品店非常值得一逛，而他的招牌文创产品当属城墙剪影烛台了。烛台需自行拼接，组合好后即是一座迷你城墙，蜡烛点燃放进烛台后，镂空的结构可在室内映出城墙剪影，效果惊艳，动手能力强的小伙伴不要错过。
           </p>
         </li>
+      </router-link>
+      <router-link to="/goodssan">
         <li class="spi-1">
           <div class="spi-div-1">
             <img src="/shop/sp-3.png" alt="" />
@@ -36,7 +39,9 @@
            去西安旅游，看完一场皮影戏后，不妨买个皮影工艺品回家留作纪念。皮影工艺品在回民街、书院门、永兴坊等地都有出售，既有带操作杆的皮影，也有镜框装裱好的皮影，无论是摆在家里做装饰还是送给亲朋，都是很不错的。
           </p>
         </li>
-        <li class="spi-1">
+      </router-link>
+      <router-link to="/goodssi">
+         <li class="spi-1">
           <div class="spi-div-1">
             <img src="/shop/sp-4.png" alt="" />
           </div>
@@ -45,6 +50,7 @@
             西安旅游，真的兵马俑带不走，不妨带两个仿秦兵马俑以留作纪念。缩小复刻版的仿秦兵马俑也是千姿百态，惟妙惟肖。随着秦兵马俑的发掘与展出，秦兵马俑复制品日渐成为中外游客理想的纪念品和礼品，使秦俑走出陕西，遍迹世界。
           </p>
         </li>
+      </router-link>
     </ul>
   
          

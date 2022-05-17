@@ -47,7 +47,7 @@
         <li class="mr-3 p-3">
           <router-link to="/" class="textc" href="#">旅游帮助</router-link>
           <ul>
-            <li><router-link to="/" class="textc" href="">天气查询</router-link></li>
+            <li><a href="https://weathernew.pae.baidu.com/weathernew/pc?query=%E9%99%95%E8%A5%BF%E8%A5%BF%E5%AE%89%E5%A4%A9%E6%B0%94&srcid=4982">天气查询</a></li>
           </ul>
         </li>
       </ul>

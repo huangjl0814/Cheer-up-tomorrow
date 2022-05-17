@@ -4,6 +4,10 @@ import Index from '../views/Index.vue'
 import Hotel from '../views/Hotels.vue'
 import Foods from '../views/Foods.vue'
 import Shopping from '../views/Shopping.vue'
+import Goodsyi from '../views/Goodsyi.vue'
+import Goodser from '../views/Goodser.vue'
+import Goodssan from '../views/Goodssan.vue'
+import Goodssi from '../views/Goodssi.vue'
 import Dfoods from '../views/Dfoods.vue'
 import Loginn from '../views/Login.vue'
 import Register from '../views/Register.vue'
@@ -21,9 +25,17 @@ import Fdetailzg from '../views/Fdetailzg'
 import Fdetailszb from '../views/Fdetailszb'
 import Fdetailsjb from '../views/Fdetailsjb'
 import Hdetail from '../views/Hdetail'
+import Hdetailer from '../views/Hdetailer'
+import Hdetailsan from '../views/Hdetailsan'
+import Hdetailsi from '../views/Hdetailsi'
+import Hdetailwu from '../views/Hdetailwu'
+import Hdetailliu from '../views/Hdetailliu'
 import Qhea from '../views/Qhea.vue'
 import Scenery from '../views/Scenery'
 import Sdetail from '../views/Sdetail'
+import Sdetailer from '../views/Sdetailer'
+import Sdetailsan from '../views/Sdetailsan'
+import Sdetailsi from '../views/Sdetailsi'
 import Trips from '../views/Trip'
 import Orders from '../views/Orders'
 import Storyyi from '../views/Storyyi'
@@ -52,6 +64,18 @@ const routes = [
     component: Sdetail
   },
   { 
+    path: '/sdetailer',
+    component: Sdetailer
+  },
+  { 
+    path: '/sdetailsan',
+    component: Sdetailsan
+  },
+  { 
+    path: '/sdetailsi',
+    component: Sdetailsi
+  },
+  { 
     path: '/scenery',
     component: Scenery
   },
@@ -62,6 +86,26 @@ const routes = [
   { 
     path: '/hdetail',
     component: Hdetail
+  },
+  { 
+    path: '/hdetailer',
+    component: Hdetailer
+  },
+  { 
+    path: '/hdetailsan',
+    component: Hdetailsan
+  },
+  { 
+    path: '/hdetailsi',
+    component: Hdetailsi
+  },
+  { 
+    path: '/hdetailwu',
+    component: Hdetailwu
+  },
+  { 
+    path: '/hdetailliu',
+    component: Hdetailliu
   },
   { 
     path: '/fdetail',
@@ -130,6 +174,22 @@ const routes = [
   {
     path: "/shopping",
     component: Shopping
+  },
+  {
+    path: "/goodsyi",
+    component: Goodsyi
+  },
+  {
+    path: "/goodser",
+    component: Goodser
+  },
+  {
+    path: "/goodssan",
+    component: Goodssan
+  },
+  {
+    path: "/goodssi",
+    component: Goodssi
   },
   {
     path: '/foods',
