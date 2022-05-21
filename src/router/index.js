@@ -8,7 +8,6 @@ import Goodsyi from '../views/Goodsyi.vue'
 import Goodser from '../views/Goodser.vue'
 import Goodssan from '../views/Goodssan.vue'
 import Goodssi from '../views/Goodssi.vue'
-import Dfoods from '../views/Dfoods.vue'
 import Loginn from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Gcxian from '../views/Gcxian.vue'
@@ -168,10 +167,6 @@ const routes = [
     component: Loginn
   },
   {
-    path: '/dfoods',
-    component: Dfoods
-  },
-  {
     path: "/shopping",
     component: Shopping
   },
@@ -219,5 +214,16 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+
+router.beforeEach((to, from, next) => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+  // 兼容IE
+  window.scrollTo(0, 0);
+  next();
+})
+
 
 export default router
